@@ -1,0 +1,117 @@
+body {
+    background-color: #000000;
+    color: #3d3d3d;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+td>div {
+    width: inherit;
+    height: inherit;
+    /* background-color: #27cf43; */
+    cursor: pointer;
+}
+
+.tdColor1,
+.tdColor2,
+.tdSeleccionado,
+.tdEnemigo,
+.tdSinCamino {
+    font-size: 3em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.tdColor1 {
+    background-color: rgba(207, 205, 205, 0.663);
+}
+
+.tdColor2 {
+    background-color: #d6d6d6;
+}
+
+table {
+    background-color: #000000;
+}
+
+.container_tablero {
+    float: left;
+    margin: 0 5%;
+}
+
+.tdSeleccionado {
+    background-color: #27cf43;
+}
+
+.tdCamino {
+    background-color: #49ced3;
+    cursor: pointer;
+}
+
+.tdSinCamino {
+    background-color: rgba(251, 255, 0, 0.663);
+}
+
+.tdEnemigo {
+    background-color: rgba(252, 58, 58, 0.788);
+}
+.tdEnroque{
+    background-color: #6e0f77;
+}
+
+.thead,
+.tfooter {
+    color: #dddddd;
+}
+
+td:first-child,
+td:last-child {
+    color: #dddddd;
+}
+
+.marcoGral {
+    width: 40%;
+    height: 39em;
+    float: left;
+    margin-top: 4%;
+}
+
+.sub-marco1{
+    /* width: 50%; */
+    width: 100%;
+    height: inherit;
+    float: left;
+}
+
+.sub-marco1_capturaNegra, .sub-marco1_capturaBlanca{
+    height: 10%;
+    background-color: rgb(161, 161, 161);
+    font-size: 3em;
+    text-align: center;
+}
+
+.sub-marco1_jugada {
+    height: 80%;
+    background-color: #27cf43;
+    font-size: 2em;
+}
+
+
+
+.sub-marco1_capturaNegra, .sub-marco1_jugada, .sub-marco1_capturaBlanca{
+    width: 100%;
+}
+
+/* 
+.sub-marco2 {
+    background-color: #1a4c9c;
+} */

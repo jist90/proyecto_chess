@@ -1,0 +1,50 @@
+
+- Condicion de jaque al rey del oponente
+    .- Cuando el oponente deja su pieza, antes de que pase el turno hace un sondeo para ver si encuentra al rey del oponente, para poder dar jaque y anotarlo, si encuentra, se guarda la posicion de la pieza para que el rey que tenga jaque no pueda moverse en el camino que le estan haciendo jaque o que otra pieza interrumpa el camino 
+
+- Cuando el rey de	l oponente no tiene movida (cellSinCamino), GANAS
+
+-Movimiento ENROQUE [TORRE - REY]
+    .- La torre y el rey tienen que quedar en su lugar de origen sin moverse.
+    .- El rey no puede tener JAQUE del oponente.
+    .- En la fila no puede haber fichas que interrumpan (reyna,alfil caballo)
+
+- Peon para coronar:
+    .- El usuario puede elejir una pieza especial (torre, alfil, caballo, reyna) para cambiar por el peon que llego al final de su recorrido.
+
+- Comer el PEON AL PASO
+    .- Si el peon salta dos casillas y queda al lado de un peon del contrario, este puede comer al peon que salto, pasando a la diagonal donde tenia quedar un paso.
+
+#############################################
+#                                           #
+#             CREAR BBDD                    #
+#    para guardar los movimientos           #
+#    y posibles jaques en el rey            #
+#                                           #
+#                                           #
+#                                           #
+#############################################
+        
+==================================================================  
+OPCIONAL
+
+- Crear archivo que guarde la partida hasta el momento jugado, retomar partida desde donde se guardo
+
+- Crear un contador para contar el valor de las piezas comidas
+
+- Crear contador de tiempo para cada jugador
+
+
+
+ANOTAR LOS MOVIMIENTO:
+
+- Para hacer un enroque corto se escribe de la manera siguiente [ 0-0 ]
+- Para hacer un enroque largo se escribe de la manera siguiente [ 0-0-0 ]
+
+- Se anota el jaque al rey del oponente con el simbolo [ + ] al final del movimiento. Ejemplo:
+    negras mueven dama a columna g fila 3 JAQUE! [ Dg3+ ]
+
+- Se anota el jaque mate al rey oponente con el simbolo de [ # ] o [ ++ ]
+    blancas mueven torre a columna b fila 2 JAQUE MATE! [ Tb2# ] o [ Tb2++ ]
+
+- El jugador puede ofrecer tablas anotando la fraccion [ ½ ½ ]
